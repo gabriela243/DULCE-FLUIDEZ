@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff2f8">
+<meta name="description" content="Aprende inglés paso a paso con K-pop, moda, ejercicios y práctica de pronunciación.">
+<title>K-Pop English Academy | Tu glow-up empieza aquí</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="K-Pop English Academy, inicio" data-route="home">
+      <span class="brand-mark" aria-hidden="true">🎀</span>
+      <span class="brand-copy"><strong>K-Pop English Academy</strong><small>Your glow-up starts here ✨</small></span>
+    </a>
+    <div class="top-actions">
+      <span class="xp-chip">⭐ <b id="xpTop">0</b><span>XP</span></span>
+      <button class="avatar-button" id="profileButton" aria-label="Ver mi progreso">♡</button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Navegación principal">
+      <div class="sidebar-caption">YOUR SPACE</div>
+      <button class="nav-item active" data-page="home"><span>⌂</span> Mi academia</button>
+      <button class="nav-item" data-page="lessons"><span>▤</span> Lecciones</button>
+      <button class="nav-item" data-page="progress"><span>✧</span> Mi progreso</button>
+      <div class="sidebar-bottom">
+        <div class="tiny-title">TU NIVEL ACTUAL</div>
+        <div class="side-level"><span>🌱</span><div><b>Starter era</b><small id="sidePct">0% completado</small></div></div>
+        <div class="progress-track"><span id="sideBar"></span></div>
+        <div class="sidebar-note">Un poquito cada día y vas a brillar. 💗</div>
+        <div class="sticker-row" aria-hidden="true"><span>♡</span><span>✦</span><span>୨୧</span></div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section id="homePage" class="page">
+        <section class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="sparkle">✦</span> YOUR NEXT ERA BEGINS NOW</div>
+            <h1>Aprende inglés a tu manera, <em>main character.</em></h1>
+            <p>De tus primeras palabras a conversaciones con confianza. Aprende con moda, K-pop y ejercicios que te ayudan a mejorar paso a paso.</p>
+            <div class="hero-actions">
+              <button class="button button-primary" id="continueButton">Empezar a aprender <span>→</span></button>
+              <span class="microcopy">♡ Tu ritmo, tu estilo, tu progreso.</span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="hero-star star-one">✦</div><div class="hero-star star-two">✧</div>
+            <div class="hero-card"><span class="hero-card-top">MY ENGLISH ERA</span><span class="hero-bow">🎀</span><span class="hero-card-bottom">dream · learn · glow</span></div>
+            <span class="floating-heart">♡</span><span class="floating-flower">✿</span>
+          </div>
+          <div class="hero-bottom">✧ SMALL STEPS, BIG DREAMS ✧</div>
+        </section>
+
+        <section class="stats-grid" aria-label="Resumen de tu progreso">
+          <article class="stat-card"><div class="stat-icon pink-icon">✦</div><div><strong id="xpStat">0 XP</strong><small>Experiencia total</small></div><span class="stat-decoration">✧</span></article>
+          <article class="stat-card"><div class="stat-icon lilac-icon">▤</div><div><strong id="doneStat">0/6</strong><small>Lecciones dominadas</small></div><span class="stat-decoration">♡</span></article>
+          <article class="stat-card"><div class="stat-icon peach-icon">♡</div><div><strong id="streakStat">¡Vamos!</strong><small>Tu racha de estudio</small></div><span class="stat-decoration">✧</span></article>
+          <article class="stat-card"><div class="stat-icon mint-icon">✓</div><div><strong id="accuracyStat">—</strong><small>Último resultado</small></div><span class="stat-decoration">✦</span></article>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><span class="eyebrow">THE ROAD TO FLUENCY</span><h2>Tu learning journey <span>🌸</span></h2><p>Avanza a tu ritmo y desbloquea cada etapa.</p></div><span class="soft-pill">6 starter lessons</span></div>
+          <div class="level-grid">
+            <article class="level-card current-level"><div class="level-top"><span class="level-emoji">🌱</span><span class="level-status">TU NIVEL</span></div><div class="level-code">LEVEL 00</div><h3>Starter</h3><p>Saludos, presentaciones y tus primeras frases en inglés.</p><div class="level-meta"><span>▤ 6 lecciones</span><span id="starterCount">0% <b>→</b></span></div><div class="progress-track"><span id="levelBar"></span></div></article>
+            <article class="level-card locked-level"><div class="level-top"><span class="level-emoji">🛍️</span><span class="lock-mark">♙</span></div><div class="level-code">LEVEL 01</div><h3>A1 · Beginner</h3><p>Rutinas, gustos, preguntas y conversaciones cotidianas.</p><div class="level-meta"><span>Próxima etapa</span><span>🔒</span></div></article>
+            <article class="level-card locked-level"><div class="level-top"><span class="level-emoji">💄</span><span class="lock-mark">♙</span></div><div class="level-code">LEVEL 02</div><h3>A2 · Elementary</h3><p>Compras, moda, comida, viajes y nuevas experiencias.</p><div class="level-meta"><span>Próxima etapa</span><span>🔒</span></div></article>
+          </div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-heading"><div><span class="eyebrow">MADE FOR YOUR INTERESTS</span><h2>Pick your lesson <span>💌</span></h2><p>Pequeños pasos, grandes glow-ups.</p></div><button class="text-button" data-goto="lessons">Ver todas <span>→</span></button></div>
+          <div class="lesson-grid" id="homeLessons"></div>
+        </section>
+        <section class="quote-banner"><span class="quote-bow">୨୧</span><div><strong>“You are closer than you think.”</strong><small>Estás más cerca de lo que crees. Keep going, girl! 💗</small></div><span class="quote-sparkle">✦</span></section>
+      </section>
+
+      <section id="lessonsPage" class="page hidden">
+        <div class="page-intro"><span class="eyebrow">YOUR STUDY ROOM 💗</span><h1>Tus lecciones</h1><p>Practica, recibe feedback y vuelve a intentarlo las veces que necesites.</p></div>
+        <div class="filter-row"><span class="soft-pill">🌱 Starter · Nivel inicial</span><span class="filter-caption">Ordenadas para aprender paso a paso</span></div>
+        <div class="lesson-grid" id="allLessons"></div>
+      </section>
+
+      <section id="progressPage" class="page hidden">
+        <div class="page-intro"><span class="eyebrow">YOUR GLOW-UP ✨</span><h1>Tu progreso</h1><p>Cada intento cuenta. Mira todo lo que estás construyendo.</p></div>
+        <div class="progress-layout">
+          <article class="content-card progress-main"><div class="card-heading"><div><span class="eyebrow">LEVEL 00</span><h2>Starter era 🌱</h2></div><span class="large-percent" id="progressPct">0%</span></div><div class="progress-track big-track"><span id="progressBar"></span></div><p class="muted-text" id="progressSentence">Completa tu primera lección para empezar tu recorrido.</p><div class="progress-metrics"><div><strong id="pXP">0</strong><small>XP acumulados</small></div><div><strong id="pDone">0</strong><small>Lecciones dominadas</small></div><div><strong id="pAttempts">0</strong><small>Intentos de práctica</small></div></div></article>
+          <article class="content-card achievements"><span class="eyebrow">LITTLE WINS</span><h2>Mis logros 🎀</h2><div class="badge-list" id="badges"></div></article>
+        </div>
+        <article class="content-card skill-card"><span class="eyebrow">YOUR STUDY HABITS</span><h2>Tu camino, a tu ritmo</h2><div class="skill-row"><span>📚 Vocabulario y comprensión</span><span class="skill-label">En práctica</span></div><div class="skill-row"><span>🎧 Escucha y pronunciación</span><span class="skill-label">En práctica</span></div><div class="skill-row"><span>✍️ Escritura y gramática</span><span class="skill-label">En práctica</span></div><p class="muted-text">Las estadísticas por habilidad se ampliarán a medida que se añadan más tipos de ejercicios al curso.</p><button class="button button-quiet" id="resetButton">Reiniciar progreso</button></article>
+      </section>
+
+      <section id="lessonPage" class="page hidden">
+        <button class="back-button" id="backToLessons">← Volver a las lecciones</button>
+        <div class="lesson-workspace">
+          <div class="lesson-main-card">
+            <div class="lesson-head"><div><span class="eyebrow" id="lessonUnit">STARTER · UNIT 1</span><h1 id="lessonTitle">Hello, bestie!</h1><p id="lessonDesc"></p></div><span class="time-pill" id="lessonTag">4 min</span></div>
+            <div class="learning-card"><div class="learning-label"><span>✦</span> LET'S LEARN</div><div class="english-word" id="wordEnglish"></div><div class="spanish-meaning" id="wordSpanish"></div><div class="example-box" id="wordExample"></div><div class="audio-actions"><button class="button button-primary" id="speakBtn">🔊 Escuchar pronunciación</button><button class="button button-quiet" id="hintButton">💡 Dame una pista</button></div><p class="tip-line">Tip: escucha el audio, repite en voz alta y luego prueba el ejercicio.</p></div>
+            <div class="quiz-section"><div class="eyebrow">PRACTICE TIME ✨</div><h2 id="question">¿Qué significa Hello?</h2><div id="answerArea"></div><div id="feedback" class="feedback hidden" aria-live="polite"></div><div class="quiz-actions" id="quizActions"></div></div>
+            <div class="speaking-section"><div class="speaking-icon">🎙️</div><div class="speaking-copy"><h3>Pronunciation practice</h3><p>Escucha la frase y repítela. Si tu navegador lo permite, usa el micrófono para ver la transcripción reconocida.</p></div><div class="speaking-actions"><button class="button button-quiet" id="speakAgain">🔊 Escuchar</button><button class="button button-quiet" id="micBtn">🎙️ Practicar con micrófono</button></div><div id="micResult" class="feedback hidden" aria-live="polite"></div><small class="disclaimer">La transcripción ayuda a practicar, pero no es una evaluación profesional del acento.</small></div>
+          </div>
+          <aside class="lesson-aside"><div class="aside-card"><div class="aside-illustration">🎀</div><span class="eyebrow">GIRL, YOU GOT THIS</span><h3>Un error también es progreso.</h3><p>Lee la explicación, escucha el audio y vuelve a intentarlo. Así se aprende de verdad.</p><div class="aside-deco">♡ ✧ ♡</div></div><div class="aside-card mini-tips"><h3>Today's reminder</h3><p>✨ No necesitas ser perfecta. Solo necesitas seguir practicando.</p></div></aside>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer"><span>୨୧</span> MADE WITH LOVE FOR YOUR ENGLISH GLOW-UP <span>୨୧</span><small>K-Pop English Academy · Starter Edition</small></footer>
+</div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>

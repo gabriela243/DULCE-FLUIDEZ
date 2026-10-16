@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Coquette English Academy 🎀</title>
+<style>
+:root{--pink:#f7c9dc;--rose:#b85f83;--deep:#75435b;--cream:#fff9fb;--pale:#fff0f6;--ink:#503746;--line:#f0d5e1}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#fff8fb,#fdebf3);color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif}
+header{padding:28px 18px 22px;text-align:center;background:radial-gradient(circle at 20% 0%,#fff 0,#fff5fa 40%,#f8d7e5 100%);border-bottom:1px solid var(--line)}
+.ribbon{font-size:28px}h1{font-family:Georgia,serif;font-weight:normal;color:var(--deep);font-size:clamp(27px,6vw,42px);margin:8px 0}header p{margin:5px auto;max-width:550px;color:#91657a}
+.wrap{max-width:950px;margin:auto;padding:18px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}.stat,.panel{background:#fffdfd;border:1px solid var(--line);border-radius:20px;padding:15px;box-shadow:0 5px 18px #a85d7b0d}.stat{text-align:center}.stat b{display:block;font-size:22px;color:var(--rose)}.stat span{font-size:12px;color:#987487}
+nav{display:flex;gap:8px;overflow:auto;padding:5px 0 14px}nav button{white-space:nowrap;border:1px solid var(--line);background:#fff;border-radius:999px;padding:11px 15px;color:var(--deep);font-weight:650;cursor:pointer}nav button.active,button.primary{background:var(--rose);color:white;border-color:var(--rose)}
+h2{font-family:Georgia,serif;font-weight:normal;color:var(--deep);margin:0 0 12px;font-size:25px}h3{color:var(--deep);margin:14px 0 7px}.sub{color:#987487;font-size:13px}.lesson-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.tile{background:var(--pale);border-radius:15px;padding:13px}.tile strong{display:block;color:var(--deep)}.pron{font-size:13px;color:#9b6c82}.table{width:100%;border-collapse:collapse;margin:8px 0}.table td,.table th{padding:10px;border-bottom:1px solid var(--line);text-align:left;font-size:14px}.table th{color:var(--rose)}.row{display:flex;align-items:center;gap:12px}.row .grow{flex:1}.tag{display:inline-block;background:var(--pale);border-radius:99px;padding:5px 9px;color:var(--rose);font-size:12px}
+input,select{width:100%;padding:12px;border:1px solid #e9c7d7;border-radius:12px;background:white;color:var(--ink);font:inherit;margin:5px 0 12px}button{font:inherit;cursor:pointer}button.primary,button.secondary{border-radius:12px;padding:12px 16px;font-weight:700;border:1px solid var(--line)}button.secondary{background:white;color:var(--deep)}.question{padding:12px 0;border-bottom:1px solid var(--line)}.feedback{padding:12px;border-radius:12px;background:#fff0f6;margin-top:12px;line-height:1.6}.hidden{display:none}.vocab{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.vocab .tile{background:white;border:1px solid var(--line)}.vocab em{color:#987487;font-size:13px}.foot{text-align:center;padding:24px;color:#a27c8f;font-size:12px}
+@media(max-width:600px){.lesson-grid,.vocab{grid-template-columns:1fr}.stats{gap:7px}.stat{padding:10px 4px}.stat b{font-size:19px}.wrap{padding:13px}.table td,.table th{padding:8px 5px}}
+</style>
+</head>
+<body>
+<header><div class="ribbon">🎀 🦢 🎀</div><h1>The Coquette English Academy</h1><p>Your personal English tutor · Aprende inglés con estilo, confianza y un toque rosa.</p><div class="tag">LEVEL 01 · PRINCIPIANTE</div></header>
+<div class="wrap">
+<div class="stats"><div class="stat"><b id="streak">1</b><span>día de estudio ♡</span></div><div class="stat"><b id="done">0/4</b><span>misiones completadas</span></div><div class="stat"><b id="points">0</b><span>puntos coquette ✨</span></div></div>
+<nav>
+<button class="active" data-tab="home">♡ Inicio</button><button data-tab="lesson">📚 Clase 01</button><button data-tab="homework">✍️ Mis tareas</button><button data-tab="vocab">🎀 Vocabulario</button><button data-tab="fashion">🦢 Fashion facts</button>
+</nav>
+<section id="home" class="panel">
+<h2>Welcome, princess! 💗</h2><p>Tu academia está lista. Dedica 30 minutos al día y avanza a tu ritmo: primero lo básico, luego frases más completas y vocabulario cada vez más rico.</p>
+<div class="lesson-grid"><div class="tile"><strong>📖 10 min · Aprende</strong><span>Estudia una regla con ejemplos en español e inglés.</span></div><div class="tile"><strong>✍️ 10 min · Practica</strong><span>Completa ejercicios y revisa tus errores.</span></div><div class="tile"><strong>💎 5 min · Vocabulary</strong><span>Guarda palabras útiles para tus conversaciones.</span></div><div class="tile"><strong>🦢 5 min · Cultura</strong><span>Descubre algo de moda y úsalo en inglés.</span></div></div>
+<h3>Tu ruta de aprendizaje</h3><table class="table"><tr><th>Unidad</th><th>Contenido</th><th>Estado</th></tr><tr><td>01</td><td>Greetings + verb to be</td><td id="status1">En curso 🎀</td></tr><tr><td>02</td><td>Artículos, plurales y objetos</td><td>Próximamente</td></tr><tr><td>03</td><td>Present simple + rutina</td><td>Próximamente</td></tr><tr><td>04</td><td>Adjetivos y descripción de outfits</td><td>Próximamente</td></tr></table>
+</section>
+<section id="lesson" class="panel hidden">
+<h2>Class 01 · First steps in English</h2><p class="sub">Duración sugerida: 30 minutos · Lee los ejemplos en voz alta.</p>
+<h3>1. Greetings · Saludos</h3><div class="lesson-grid">
+<div class="tile"><strong>Hello!</strong>¡Hola!<div class="pron">Pronunciación: jelóu</div></div><div class="tile"><strong>Good morning!</strong>¡Buenos días!<div class="pron">Pronunciación: gud mórning</div></div>
+<div class="tile"><strong>How are you?</strong>¿Cómo estás?<div class="pron">Pronunciación: jáu ar iu</div></div><div class="tile"><strong>I'm fine, thank you.</strong>Estoy bien, gracias.<div class="pron">Pronunciación: aim fáin, zank iu</div></div></div>
+<h3>2. Personal pronouns · Pronombres</h3><table class="table"><tr><th>English</th><th>Español</th><th>To be</th></tr><tr><td>I</td><td>Yo</td><td>am</td></tr><tr><td>You</td><td>Tú / ustedes</td><td>are</td></tr><tr><td>He</td><td>Él</td><td>is</td></tr><tr><td>She</td><td>Ella</td><td>is</td></tr><tr><td>It</td><td>Eso / ello</td><td>is</td></tr><tr><td>We</td><td>Nosotros/as</td><td>are</td></tr><tr><td>They</td><td>Ellos/as</td><td>are</td></tr></table>
+<h3>3. Grammar · Verb to be</h3><p><b>To be</b> significa <b>ser o estar</b>. La estructura básica es <span class="tag">pronombre + am/is/are + complemento</span>.</p>
+<div class="tile"><strong>I am happy.</strong>Estoy feliz.<br><strong>She is elegant.</strong>Ella es elegante.<br><strong>They are friends.</strong>Ellos son amigos.<br><strong>We are not tired.</strong>No estamos cansados.</div>
+<p><b>Recuerda:</b> no digas “Am happy”. Di “I am happy”. En inglés, normalmente necesitamos el pronombre.</p>
+<button class="primary" onclick="complete('lesson')">Marcar clase como estudiada ✓</button>
+</section>
+<section id="homework" class="panel hidden">
+<h2>Homework 01 · Your turn ✍️</h2><p>Escribe tus respuestas. Al corregir, recibirás una puntuación y una explicación de los errores.</p>
+<form id="quiz">
+<div class="question"><b>1. I ___ happy.</b><select name="q1"><option value="">Elige...</option><option>am</option><option>is</option><option>are</option></select></div>
+<div class="question"><b>2. She ___ elegant.</b><select name="q2"><option value="">Elige...</option><option>am</option><option>is</option><option>are</option></select></div>
+<div class="question"><b>3. «Falda» en inglés es...</b><input name="q3" placeholder="Escribe en inglés"></div>
+<div class="question"><b>4. Traduce: «Hola, ¿cómo estás?»</b><input name="q4" placeholder="Escribe la frase en inglés"></div>
+<div class="question"><b>5. Traduce: «Me encantan las perlas».</b><input name="q5" placeholder="Escribe la frase en inglés"></div>
+<div class="question"><b>6. They ___ friends.</b><select name="q6"><option value="">Elige...</option><option>am</option><option>is</option><option>are</option></select></div>
+<div class="question"><b>7. Traduce: «Ella está a la moda».</b><input name="q7" placeholder="Escribe la frase en inglés"></div>
+<button class="primary" type="submit">Corregir mi tarea 🎀</button> <button class="secondary" type="reset" id="reset">Borrar respuestas</button>
+</form><div id="result" class="feedback hidden" aria-live="polite"></div>
+</section>
+<section id="vocab" class="panel hidden">
+<h2>Vocabulary diary · Palabras preciosas 💌</h2><p>Aprende la palabra, su significado y una oración útil. La pronunciación es una aproximación para hispanohablantes.</p>
+<div class="vocab">
+<div class="tile"><strong>Bow</strong><em>bou · lazo</em><p>I like your bow.<br>Me gusta tu lazo.</p></div><div class="tile"><strong>Skirt</strong><em>skert · falda</em><p>My skirt is pink.<br>Mi falda es rosa.</p></div>
+<div class="tile"><strong>Pearls</strong><em>perlz · perlas</em><p>I love pearls.<br>Me encantan las perlas.</p></div><div class="tile"><strong>Dress</strong><em>dres · vestido</em><p>Her dress is elegant.<br>Su vestido es elegante.</p></div>
+<div class="tile"><strong>Fashionable</strong><em>fá-sho-na-bol · a la moda</em><p>She is fashionable.<br>Ella está a la moda.</p></div><div class="tile"><strong>Gorgeous</strong><em>gór-yas · precioso/a</em><p>That outfit is gorgeous.<br>Ese conjunto es precioso.</p></div>
+<div class="tile"><strong>Timeless</strong><em>táim-les · atemporal</em><p>This style is timeless.<br>Este estilo no pasa de moda.</p></div><div class="tile"><strong>Outfit</strong><em>áut-fit · conjunto</em><p>I love your outfit.<br>Me encanta tu conjunto.</p></div>
+</div>
+</section>
+<section id="fashion" class="panel hidden">
+<h2>Fashion facts · Moda & culture 🦢</h2>
+<div class="tile"><strong>Did you know?</strong>La expresión francesa <i>haute couture</i> significa alta costura y se asocia con prendas exclusivas hechas con gran atención al detalle.</div>
+<h3>Three elegant words</h3><table class="table"><tr><td><b>Elegant</b></td><td>Elegante</td><td>She is elegant.</td></tr><tr><td><b>Gorgeous</b></td><td>Precioso/a, espectacular</td><td>Your dress is gorgeous.</td></tr><tr><td><b>Timeless</b></td><td>Atemporal</td><td>That design is timeless.</td></tr></table>
+<h3>Mini reto de estilo</h3><p>Describe un conjunto en una oración usando <i>pink</i> (rosa), <i>skirt</i> (falda) o <i>elegant</i> (elegante). Ejemplo: <b>My skirt is pink.</b></p><input id="fashionAnswer" placeholder="My outfit is..."><button class="primary" onclick="saveFashion()">Guardar mi frase ✨</button><div id="fashionFeedback" class="feedback hidden"></div>
+</section>
+<div class="foot">Made with love & ribbons ♡ · Estudia a tu ritmo, princess.</div>
+</div>
+<script>
+const tabs=[...document.querySelectorAll('nav button')];function showTab(id){document.querySelectorAll('section').forEach(s=>s.classList.toggle('hidden',s.id!==id));tabs.forEach(b=>b.classList.toggle('active',b.dataset.tab===id));}
+tabs.forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+let progress=JSON.parse(localStorage.getItem('coquetteProgress')||'{"lesson":false,"homework":false,"fashion":false,"vocab":false,"points":0}');
+function render(){document.getElementById('done').textContent=[progress.lesson,progress.homework,progress.fashion,progress.vocab].filter(Boolean).length+'/4';document.getElementById('points').textContent=progress.points;document.getElementById('status1').textContent=progress.lesson?'Completada ✓':'En curso 🎀';}
+function complete(key){if(!progress[key]){progress[key]=true;progress.points+=10;localStorage.setItem('coquetteProgress',JSON.stringify(progress));render();}alert('¡Muy bien! +10 puntos coquette 🎀');}
+document.querySelector('nav button[data-tab="vocab"]').addEventListener('click',()=>{if(!progress.vocab){progress.vocab=true;progress.points+=5;localStorage.setItem('coquetteProgress',JSON.stringify(progress));render();}});
+document.getElementById('quiz').addEventListener('submit',e=>{e.preventDefault();let f=new FormData(e.target);let keys=['q1','q2','q3','q4','q5','q6','q7'];let expected=['am','is','skirt','hello how are you','i love pearls','are','she is fashionable'];let notes=['Con I usamos am.','Con she usamos is.','Skirt significa falda.','Hello, how are you? significa Hola, ¿cómo estás?','I love pearls significa Me encantan las perlas.','Con they usamos are.','She is fashionable significa Ella está a la moda.'];let score=0,html='';keys.forEach((k,i)=>{let a=String(f.get(k)||'').trim().toLowerCase().replace(/[!?. ,']/g,' ').replace(/\s+/g,' ').trim();let ok=a===expected[i]||(i===3&&a==='hello how are you')||(i===4&&a==='i love pearls');if(ok)score++;html+=`<p>${ok?'💗':'🌸'} <b>${i+1}. ${ok?'¡Correcto!':'Repasa esto:'}</b> ${notes[i]} ${!ok?'Respuesta sugerida: <i>'+expected[i]+'</i>.':''}</p>`;});html=`<h3>Resultado: ${score}/7</h3>`+html;if(score>=5){if(!progress.homework){progress.homework=true;progress.points+=score*2;localStorage.setItem('coquetteProgress',JSON.stringify(progress));render();}}document.getElementById('result').innerHTML=html;document.getElementById('result').classList.remove('hidden');});
+document.getElementById('reset').addEventListener('click',()=>document.getElementById('result').classList.add('hidden'));
+function saveFashion(){let val=document.getElementById('fashionAnswer').value.trim();let box=document.getElementById('fashionFeedback');box.classList.remove('hidden');if(!val){box.textContent='Escribe una frase primero, princess 🎀';return;}box.textContent='¡Frase guardada en esta sesión! Revisa que tenga un pronombre y un verbo: por ejemplo, “My outfit is elegant.”';if(!progress.fashion){progress.fashion=true;progress.points+=5;localStorage.setItem('coquetteProgress',JSON.stringify(progress));render();}}
+render();
+</script>
+</body></html>
